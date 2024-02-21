@@ -12,17 +12,20 @@ import java.util.List;
 @AllArgsConstructor
 public class ServiceMoniteurImp implements ServiceMoniteur {
     MoniteurRepository moniteurRepository;
+    @Override
    public List<Moniteur> retrieveAllMoniteurs(){
     return moniteurRepository.findAll();
-
-
    }
+    @Override
     public Moniteur addMoniteur(Moniteur moniteur){
+
         return  moniteurRepository.save(moniteur);
     }
+    @Override
     public Moniteur updateMoniteur (Moniteur moniteur){
         return  moniteurRepository.save(moniteur);
     }
+    @Override
     public Moniteur retrieveMoniteur (Long numMoniteur){
          return moniteurRepository.findById(numMoniteur).orElse(null);
     }

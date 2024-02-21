@@ -12,15 +12,20 @@ import java.util.List;
 @AllArgsConstructor
 public class ServicePisteImp implements ServicePiste {
     PisteRepository pisteRepository;
+    @Override
     public List<Piste> retrieveAllPistes(){
         return pisteRepository.findAll();
     }
+    @Override
     public Piste addPiste(Piste piste){
+
         return pisteRepository.save(piste);
     }
+    @Override
     public Piste updatePiste (Piste piste){
         return pisteRepository.save(piste);
     }
+    @Override
     public Piste retrievePiste (Long numPiste){
         return pisteRepository.findById(numPiste).orElse(null);
 

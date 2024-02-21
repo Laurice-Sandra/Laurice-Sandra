@@ -14,16 +14,21 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class ServiceCoursImp implements ServiceCours {
+
     CoursRepository coursRepository;
+    @Override
     public List<Cours> retrieveAllCourses(){
         return coursRepository.findAll();
     }
+    @Override
     public Cours addCours(Cours cours){
         return coursRepository.save(cours);
     }
+    @Override
     public Cours updateCours (Cours cours){
         return coursRepository.save(cours);
     }
+    @Override
     public Cours retrieveCours (Long numCours){
         return coursRepository.findById(numCours).orElse(null);
 
