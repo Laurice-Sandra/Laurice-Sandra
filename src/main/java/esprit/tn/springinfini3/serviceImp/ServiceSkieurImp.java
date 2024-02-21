@@ -3,13 +3,14 @@ package esprit.tn.springinfini3.serviceImp;
 import esprit.tn.springinfini3.entity.Skieur;
 import esprit.tn.springinfini3.repository.SkieurRepository;
 import esprit.tn.springinfini3.serviceInterface.ServiceSkieur;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@NoArgsConstructor
+@AllArgsConstructor
 public class ServiceSkieurImp implements ServiceSkieur {
     SkieurRepository skieurRepository;
     public List<Skieur> retrieveAllSkieurs(){

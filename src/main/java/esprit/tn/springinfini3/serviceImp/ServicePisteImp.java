@@ -3,12 +3,13 @@ package esprit.tn.springinfini3.serviceImp;
 import esprit.tn.springinfini3.entity.Piste;
 import esprit.tn.springinfini3.repository.PisteRepository;
 import esprit.tn.springinfini3.serviceInterface.ServicePiste;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-@NoArgsConstructor
+@AllArgsConstructor
 public class ServicePisteImp implements ServicePiste {
     PisteRepository pisteRepository;
     public List<Piste> retrieveAllPistes(){

@@ -5,13 +5,14 @@ import esprit.tn.springinfini3.entity.Piste;
 import esprit.tn.springinfini3.repository.CoursRepository;
 import esprit.tn.springinfini3.repository.PisteRepository;
 import esprit.tn.springinfini3.serviceInterface.ServiceCours;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@NoArgsConstructor
+@AllArgsConstructor
 public class ServiceCoursImp implements ServiceCours {
     CoursRepository coursRepository;
     public List<Cours> retrieveAllCourses(){
