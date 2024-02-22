@@ -1,4 +1,5 @@
-package esprit.tn.springinfini3.entity.controller;
+package esprit.tn.springinfini3.controller;
+
 
 import esprit.tn.springinfini3.entity.Piste;
 import esprit.tn.springinfini3.serviceInterface.ServicePiste;
