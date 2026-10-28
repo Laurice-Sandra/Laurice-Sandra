@@ -15,7 +15,7 @@ Chaque projet a deux volets : **technique** (le calcul) et **opérationnel** (qu
 | 1 | *à venir* — Pipeline de fiabilisation multi-sources | Data | 🔜 |
 
 ## Outils
-Python · R · SQL · SAS · PHP · MongoDB · Git
+Python · R · SQL · SAS  · MongoDB · Git
 
 ## Usage de l'IA
 J'utilise des assistants IA (Claude, GitHub Copilot) pour apprendre et coder plus vite. Je vérifie chaque résultat de façon indépendante, et chaque projet documente ce que l'IA a fait et ce que j'ai fait moi-même : voir [AI_USAGE.md](AI_USAGE.md).
